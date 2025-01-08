@@ -96,7 +96,7 @@ export const AboutInfo: React.FC = () => {
         </StyledText>
       </StyledContent>
 
-      <StyledImage src={'../../../../assets/home01.jpg'} />
+      <StyledImage src={'../../assets/home01.jpg'} />
     </StyledWrapper>
   );
 };
