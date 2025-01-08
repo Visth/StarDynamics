@@ -28,6 +28,7 @@
 - JavaScript
 - Typescript
 - React
+- Axios
 - Styled Components
 - Created Utils and Model
 
