@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel='dns-prefetch' href='//www.youtube.com' />
+    <link rel='dns-prefetch' href='//www.google.com' />
+    <title>{vars.title}</title>
+
+    <meta name="description" content="{vars.description}">
+    <meta name="keywords" content="{vars.keywords}">
+    <meta property="og:type" content="{vars.ogType}">
+    <meta property="og:title" content="{vars.ogTitle}">
+    <meta property="og:url" content="{vars.ogUrl}">
+    <meta property="og:site_name" content="{vars.ogSiteName}">
+    <meta property="og:image" content="{vars.ogImage}">
+    <meta name="twitter:card" content="{vars.ogTwitterCard}">
+    <meta property="twitter:domain" content="{vars.ogTwitterDomain}">
+    <meta property="twitter:url" content="{vars.ogTwitterUrl}">
+    <meta name="twitter:title" content="{vars.ogTwitterTitle}">
+    <meta name="twitter:description" content="{vars.ogTwitterDescription}">
+    <meta name="twitter:image" content="{vars.ogTwitterImage}">
+
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "{vars.ogUrl}",
+            "name": "{vars.ogTitle}",
+            "description": "{vars.description}"
+        }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQZKHKXGP2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-JQZKHKXGP2');
+    </script>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>
