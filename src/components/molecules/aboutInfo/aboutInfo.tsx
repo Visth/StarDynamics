@@ -67,9 +67,11 @@ export const AboutInfo: React.FC = () => {
         {/* <StyledText>Streaming Platform</StyledText> */}
         <StyledText>
           <StyledList>
-            <StyledListItem><b>Streaming Platform:</b> Delivers high-quality movies streaming, even with weaker internet connections.</StyledListItem>
             <StyledListItem>
-            <b>Streaming Platform:</b>An easy-to-use interface ensures a great experience for every user.
+              <b>Streaming Platform:</b> Delivers high-quality movies streaming, even with weaker internet connections.
+            </StyledListItem>
+            <StyledListItem>
+              <b>Streaming Platform:</b>An easy-to-use interface ensures a great experience for every user.
               {isFirstListExpanded ? null : (
                 <span style={{ cursor: 'pointer', color: '#005eff' }} onClick={toggleFirstList}>
                   {' '}
@@ -80,10 +82,10 @@ export const AboutInfo: React.FC = () => {
             {isFirstListExpanded && (
               <>
                 <StyledListItem>
-                <b>Streaming Platform:</b> Advanced content personalization tools increase viewer engagement.
+                  <b>Streaming Platform:</b> Advanced content personalization tools increase viewer engagement.
                 </StyledListItem>
                 <StyledListItem>
-                <b>Cryptocurrency Investment App:</b> Secure solutions for managing cryptocurrency wallets – your data is protected.
+                  <b>Cryptocurrency Investment App:</b> Secure solutions for managing cryptocurrency wallets – your data is protected.
                 </StyledListItem>
                 <StyledListItem>
                   <b>Cryptocurrency Investment App:</b> Clear analyses and forecasts help make accurate investment decisions.
@@ -94,7 +96,7 @@ export const AboutInfo: React.FC = () => {
         </StyledText>
       </StyledContent>
 
-      <StyledImage src={'../../assets/home01.jpg'} />
+      <StyledImage src={'../../../assets/home01.jpg'} />
     </StyledWrapper>
   );
 };
