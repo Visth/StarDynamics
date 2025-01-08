@@ -1,47 +1,65 @@
 import React from 'react';
-import { StyledTeamWrapper, StyledRow, StyledImage, StyledTextWrapper, StyledName, StyledDescription, StyledTechStack } from './AboutUsTeam-styling';
+import {
+  StyledTeamWrapper,
+  StyledRow,
+  StyledImage,
+  StyledTextWrapper,
+  StyledName,
+  StyledDescription,
+  StyledTechStack,
+} from './AboutUsTeam-styling';
+import teammember1 from '../../../../public/assets/teammember1.jpg';
+import teammember2 from '../../../../public/assets/teammember2.jpg';
+import teammember3 from '../../../../public/assets/teammember3.jpg';
+import teammember4 from '../../../../public/assets/teammember4.jpg';
+import teammember5 from '../../../../public/assets/teammember5.jpg';
+import teammember6 from '../../../../public/assets/teammember6.jpg';
 
 export const AboutUsTeam: React.FC = () => {
-  
   const teamMembers = [
     {
       name: 'Stanley Johnson',
-      description: 'A seasoned Project Manager with 8+ years of experience leading successful software development projects. Skilled in Agile methodologies, team coordination, and delivering results on time and within budget.',
+      description:
+        'A seasoned Project Manager with 8+ years of experience leading successful software development projects. Skilled in Agile methodologies, team coordination, and delivering results on time and within budget.',
       techStack: ['Agile', 'Scrum', 'JIRA'],
-      img: '../../assets/teammember1.jpg'
+      img: teammember1,
     },
     {
       name: 'Michael Thompson',
-      description: 'Senior Frontend Developer with over a decade of experience crafting visually stunning and responsive user interfaces. Passionate about design systems and delivering seamless user experiences.',
+      description:
+        'Senior Frontend Developer with over a decade of experience crafting visually stunning and responsive user interfaces. Passionate about design systems and delivering seamless user experiences.',
       techStack: ['JavaScript', 'React', 'TypeScript', 'CSS/SCSS'],
-      img: '/assets/teammember2.jpg'
+      img: teammember2,
     },
     {
       name: 'Sophia Ramirez',
-      description: 'Senior Backend Developer specializing in building scalable, high-performance systems. Expert in RESTful APIs, database management, and cloud integrations with over 12 years of experience.',
+      description:
+        'Senior Backend Developer specializing in building scalable, high-performance systems. Expert in RESTful APIs, database management, and cloud integrations with over 12 years of experience.',
       techStack: ['Node.js', 'Express', 'MongoDB', 'AWS'],
-      img: '/assets/teammember3.jpg'
+      img: teammember3,
     },
     {
       name: 'Liam Carter',
-      description: 'Senior Fullstack Developer with extensive expertise in both frontend and backend technologies. Known for delivering end-to-end solutions for complex business challenges.',
+      description:
+        'Senior Fullstack Developer with extensive expertise in both frontend and backend technologies. Known for delivering end-to-end solutions for complex business challenges.',
       techStack: ['Vue.js', 'Node.js', 'PostgreSQL', 'Docker'],
-      img: '../../assets/teammember4.jpg'
+      img: teammember4,
     },
     {
       name: 'Filip Nguyen',
-      description: 'Senior Fullstack Developer with a strong focus on creating robust applications. Experienced in leading development teams and implementing cutting-edge solutions for clients.',
+      description:
+        'Senior Fullstack Developer with a strong focus on creating robust applications. Experienced in leading development teams and implementing cutting-edge solutions for clients.',
       techStack: ['Angular', 'Spring Boot', 'Java', 'GraphQL'],
-      img: '../../assets/teammember5.jpg'
+      img: teammember5,
     },
     {
       name: 'Oliver Scott',
-      description: 'Regular Frontend Developer passionate about building dynamic and accessible web applications. Always eager to learn and implement the latest in UI/UX design trends.',
+      description:
+        'Regular Frontend Developer passionate about building dynamic and accessible web applications. Always eager to learn and implement the latest in UI/UX design trends.',
       techStack: ['HTML5', 'CSS3', 'JavaScript', 'React'],
-      img: '../../assets/teammember6.jpg'
+      img: teammember6,
     },
   ];
-  
 
   return (
     <StyledTeamWrapper>

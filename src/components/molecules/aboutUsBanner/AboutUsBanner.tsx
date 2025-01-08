@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledBannerWrapper, StyledContent, StyledTitle, StyledText, StyledImage } from './AboutUsBanner-styling';
+import aboutus01 from "../../../../public/assets/aboutus01.jpg"
 
 export const AboutUsBanner: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const AboutUsBanner: React.FC = () => {
           backend systems, and leading projects to success.
         </StyledText>
       </StyledContent>
-      <StyledImage src={'../../assets/aboutus01.jpg'} />
+      <StyledImage src={aboutus01} />
     </StyledBannerWrapper>
   );
 };

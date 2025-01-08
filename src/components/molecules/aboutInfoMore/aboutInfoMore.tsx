@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyledWrapper, StyledSection, StyledHeading, StyledText, StyledImage } from './aboutInfoMore-styling';
+import home02 from '../../../../public/assets/home02.jpg';
+import home03 from '../../../../public/assets/home03.jpg';
 
 export const AboutInfoMore: React.FC = () => {
   return (
@@ -10,7 +12,7 @@ export const AboutInfoMore: React.FC = () => {
           <b>Over 80%</b> of mobile users prefer apps with sleek and responsive designs and a well-designed mobile app can{' '}
           <b>increase customer retention rates by 60%.</b>
         </StyledText>
-        <StyledImage src={'../../assets/home02.jpg'} />
+        <StyledImage src={home02} />
       </StyledSection>
 
       <StyledSection>
@@ -19,7 +21,7 @@ export const AboutInfoMore: React.FC = () => {
           Our platform offers tailored recommendations powered by advanced AI, ensuring viewers always find something they'll love. With a
           vast library of movies and shows, there's something for everyone to enjoy anytime, anywhere.
         </StyledText>
-        <StyledImage src={'../../assets/home03.jpg'} />
+        <StyledImage src={home03} />
       </StyledSection>
     </StyledWrapper>
   );

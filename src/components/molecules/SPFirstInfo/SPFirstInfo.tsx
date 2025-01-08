@@ -9,6 +9,7 @@ import {
   CenteredContainer,
 } from './SPFirstInfo-styling';
 import { useState } from 'react';
+import productsSP02 from '../../../../public/assets/productsSP02.jpg';
 
 export const SPFirstInfo = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -31,7 +32,7 @@ export const SPFirstInfo = () => {
           options for Full HD and stunning 4K Ultra HD streaming, your viewing experience is always top-notch. Enjoy ad-free content, the
           ability to download your favorites, and watch seamlessly on multiple devices.
         </StyledText>
-        <StyledImage src={'../../assets/productsSP02.jpg'} />
+        <StyledImage src={productsSP02} />
         <StyledButton onClick={toggleExpand}>{isExpanded ? 'Hide' : 'Show more'}</StyledButton>
         {isExpanded && (
           <StyledList>

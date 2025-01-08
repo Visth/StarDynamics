@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledWrapper, StyledContent, StyledHeading, StyledText, StyledImage } from './CAAbout-styling';
+import productsCA02 from "../../../../public/assets/productsCA02.jpg"
 
 export const CAAbout: React.FC = () => {
   return (
@@ -20,7 +21,7 @@ export const CAAbout: React.FC = () => {
         </StyledText>
       </StyledContent>
 
-      <StyledImage src={'../../assets/productsCA02.jpg'} />
+      <StyledImage src={productsCA02} />
     </StyledWrapper>
   );
 };

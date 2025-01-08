@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledWrapper, StyledContent, StyledHeading, StyledText, StyledImage } from './SPAbout-styling';
+import productsSP03 from '../../../../public/assets/productsSP03.jpg';
 
 export const SPAbout: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ export const SPAbout: React.FC = () => {
         </StyledText>
       </StyledContent>
 
-      <StyledImage src={'../../assets/productsSP03.jpg'} />
+      <StyledImage src={productsSP03} />
     </StyledWrapper>
   );
 };

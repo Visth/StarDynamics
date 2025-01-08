@@ -132,6 +132,8 @@ export const StyledSectionImage = styled.img`
 `;
 
 import React from 'react';
+import docsSP01 from '../../public/assets/docsSP01TEST.jpg';
+import docsSP02 from '../../public/assets/docsSP02.jpg';
 
 export const DocsSP: React.FC = () => {
   return (
@@ -143,7 +145,7 @@ export const DocsSP: React.FC = () => {
           technologies, it ensures a high-quality viewing experience with low latency and rich features for content discovery and
           management.
         </StyledContentText>
-        <StyledImage src="../../assets/docsSP01.png" />
+        <StyledImage src={docsSP01} />
       </StyledHeaderSection>
 
       <StyledSectionBoxContainer>
@@ -159,7 +161,7 @@ export const DocsSP: React.FC = () => {
             <br />- The platform is hosted on a scalable <b>AWS</b> infrastructure, ensuring high availability and performance.
             <br />
           </StyledSectionText>
-          <StyledSectionImage src="../../assets/docsSP02.jpg" />
+          <StyledSectionImage src={docsSP02} />
         </StyledSectionBox>
       </StyledSectionBoxContainer>
 

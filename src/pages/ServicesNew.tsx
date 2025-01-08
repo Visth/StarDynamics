@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import services01 from '../../public/assets/services01.jpg';
+import services02 from '../../public/assets/services02.jpg';
+import services03 from '../../public/assets/services03.jpg';
 
 interface StyledListProps {
   isMain?: boolean;
@@ -29,7 +32,7 @@ export const StyledCardMain = styled.div`
     align-self: center;
     margin: 0;
     margin-top: 100px;
-}
+  }
 `;
 
 export const StyledCardsContainer = styled.div`
@@ -42,7 +45,7 @@ export const StyledCardsContainer = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 50px;
-}
+  }
 `;
 
 export const StyledCardWrapper = styled.div`
@@ -53,7 +56,7 @@ export const StyledCardWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-}
+  }
 `;
 
 export const StyledCard = styled.div`
@@ -65,7 +68,7 @@ export const StyledCard = styled.div`
 
   @media (max-width: 768px) {
     width: 90vw;
-}
+  }
 `;
 
 export const StyledListWithProps = styled.ul<StyledListProps>`
@@ -180,7 +183,7 @@ export const ServicesNew: React.FC<ServicesNewProps> = ({ footerRef }) => {
   return (
     <StyledWrapper>
       <StyledCardMain>
-        <StyledImage src={'../../assets/services01.jpg'} />
+        <StyledImage src={services01} />
         <StyledTitle>Software & Web Development Services</StyledTitle>
         <StyledText>
           <b>Our company specializes in delivering top-notch programming services tailored to meet your needs.</b> We design and develop
@@ -200,49 +203,50 @@ export const ServicesNew: React.FC<ServicesNewProps> = ({ footerRef }) => {
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>Our team specializes</b> in building high-quality web and mobile applications, ensuring seamless user experiences and modern
-                  designs across all platforms.
+                  <b>Our team specializes</b> in building high-quality web and mobile applications, ensuring seamless user experiences and
+                  modern designs across all platforms.
                 </p>
               </StyledListItem>
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>From server management to complex backend architectures</b>, we deliver reliable and scalable solutions tailored to your
-                  business needs.
+                  <b>From server management to complex backend architectures</b>, we deliver reliable and scalable solutions tailored to
+                  your business needs.
                 </p>
               </StyledListItem>
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>Whether you need</b> dedicated developers for your team or end-to-end project delivery, we adapt to your workflow for smooth
-                  integration and results.
+                  <b>Whether you need</b> dedicated developers for your team or end-to-end project delivery, we adapt to your workflow for
+                  smooth integration and results.
                 </p>
               </StyledListItem>
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>We leverage the latest technologies and frameworks</b> to create cutting-edge software that gives you a competitive edge in
-                  the market.
+                  <b>We leverage the latest technologies and frameworks</b> to create cutting-edge software that gives you a competitive
+                  edge in the market.
                 </p>
               </StyledListItem>
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>Every project</b> we take on is tailored to your specific requirements, ensuring the software aligns perfectly with your goals
-                  and challenges.
+                  <b>Every project</b> we take on is tailored to your specific requirements, ensuring the software aligns perfectly with
+                  your goals and challenges.
                 </p>
               </StyledListItem>
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>With years of experience</b> in delivering successful projects, we have earned the trust of clients across various industries.
+                  <b>With years of experience</b> in delivering successful projects, we have earned the trust of clients across various
+                  industries.
                 </p>
               </StyledListItem>
               <StyledListItem>
                 <i className="pi pi-angle-right" style={{ fontSize: '1.2rem', color: '#35c6f2', fontWeight: 'bold' }}></i>
                 <p>
-                  <b>From initial planning and development to deployment and maintenance</b>, we provide comprehensive support to ensure long-term
-                  success for your software.
+                  <b>From initial planning and development to deployment and maintenance</b>, we provide comprehensive support to ensure
+                  long-term success for your software.
                 </p>
               </StyledListItem>
             </ul>
@@ -254,7 +258,7 @@ export const ServicesNew: React.FC<ServicesNewProps> = ({ footerRef }) => {
       <StyledCardsContainer>
         <StyledCardWrapper>
           <StyledCard>
-            <StyledImage src={'../../assets/services02.jpg'} />
+            <StyledImage src={services02} />
             <StyledTitle>
               <i className="pi pi-play-circle" style={{ fontSize: '1.6rem', color: 'rgb(229,9,20)' }}></i>
               <p>Streaming Platform</p>
@@ -307,7 +311,7 @@ export const ServicesNew: React.FC<ServicesNewProps> = ({ footerRef }) => {
 
         <StyledCardWrapper>
           <StyledCard>
-            <StyledImage src={'../../assets/services03.jpg'} />
+            <StyledImage src={services03} />
             <StyledTitle>
               <i className="pi pi-bitcoin" style={{ fontSize: '1.6rem', color: 'rgb(247,147,26)' }}></i>
               <p>Cryptocurrency Investment App</p>

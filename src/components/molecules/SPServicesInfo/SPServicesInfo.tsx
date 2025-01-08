@@ -7,8 +7,10 @@ import {
   StyledText,
   StyledDropdownButton,
   StyledDropdownContent,
-  StyledContactButton,
 } from './SPServicesInfo-styling';
+import SPsingle from '../../../../public/assets/SPsingle.jpg';
+import SPstandard from '../../../../public/assets/SPstandard.jpg';
+import SPpremium from '../../../../public/assets/SPpremium.jpg';
 
 interface DPPServicesInfoProps {
   footerRef: React.RefObject<HTMLDivElement>;
@@ -30,7 +32,7 @@ export const SPServicesInfo: React.FC<DPPServicesInfoProps> = ({ footerRef }) =>
   return (
     <StyledWrapper>
       <StyledColumn>
-        <StyledImage src={'../../assets/SPsingle.jpg'} />
+        <StyledImage src={SPsingle} />
         <StyledTitle>Single Plan</StyledTitle>
         <StyledText>
           Single Plan is a great option for individuals. Enjoy Full HD streaming, ad-free, on one device. It’s the most affordable
@@ -77,7 +79,7 @@ export const SPServicesInfo: React.FC<DPPServicesInfoProps> = ({ footerRef }) =>
       </StyledColumn>
 
       <StyledColumn>
-        <StyledImage src={'../../assets/SPstandard.jpg'} />
+        <StyledImage src={SPstandard} />
         <StyledTitle>Standard Plan</StyledTitle>
         <StyledText>
           Standard Plan lets you watch on two devices simultaneously, ad-free, in Full HD quality, with the ability to download movies.
@@ -123,7 +125,7 @@ export const SPServicesInfo: React.FC<DPPServicesInfoProps> = ({ footerRef }) =>
       </StyledColumn>
 
       <StyledColumn>
-        <StyledImage src={'../../assets/SPpremium.jpg'} />
+        <StyledImage src={SPpremium} />
         <StyledTitle>Premium Plan</StyledTitle>
         <StyledText>
           Premium Plan is the perfect choice for families. Stream on up to four devices at the same time, ad-free, in stunning 4K quality,
