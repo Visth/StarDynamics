@@ -9,6 +9,7 @@ import {
   StyledImage,
   StyledArrow,
 } from './aboutInfo-styling';
+import home01 from '../../../../public/assets/home01.jpg';
 
 export const AboutInfo: React.FC = () => {
   const [isFirstListExpanded, setFirstListExpanded] = useState(false);
@@ -96,7 +97,7 @@ export const AboutInfo: React.FC = () => {
         </StyledText>
       </StyledContent>
 
-      <StyledImage src={'/assets/home01.jpg'} />
+      <StyledImage src={home01} />
     </StyledWrapper>
   );
 };

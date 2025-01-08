@@ -40,6 +40,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource', // Obsługa plików statycznych
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
